@@ -22,3 +22,19 @@
 2022-04-08 22:54:49.771 [main] INFO  calculator.Calculator - [RESULT - SQ ROOT] - 2.0
 2022-04-08 22:54:49.771 [main] INFO  calculator.Calculator - [SQ ROOT] - 1.0
 2022-04-08 22:54:49.771 [main] INFO  calculator.Calculator - [RESULT - SQ ROOT] - 1.0
+2022-04-09 02:41:54.522 [main] INFO  calculator.Calculator - [FACTORIAL] - 6.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - FACTORIAL] - 720.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [FACTORIAL] - 3.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - FACTORIAL] - 6.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [SQ ROOT] - 3.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - SQ ROOT] - 1.7320508075688772
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [SQ ROOT] - 4.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - SQ ROOT] - 2.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [FACTORIAL] - 5.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - FACTORIAL] - 120.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [FACTORIAL] - 4.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - FACTORIAL] - 24.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [SQ ROOT] - 4.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - SQ ROOT] - 2.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [SQ ROOT] - 1.0
+2022-04-09 02:41:54.538 [main] INFO  calculator.Calculator - [RESULT - SQ ROOT] - 1.0
