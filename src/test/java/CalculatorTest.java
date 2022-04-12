@@ -32,4 +32,28 @@ public class CalculatorTest {
         assertNotEquals("Finding factorial of a number for False Positive", 120, calculator.factoral(6), DELTA);
         assertNotEquals("Finding factorial of a number for False Positive", 24, calculator.factoral(3), DELTA);
     }
+
+    @Test
+    public void powerTruePositive(){
+        assertEquals("Finding power for True Positive", 8, calculator.power(2, 3), DELTA);
+        assertEquals("Finding power for True Positive", 64, calculator.power(4, 3), DELTA);
+    }
+
+    @Test
+    public void powerFalsePositive(){
+        assertNotEquals("Finding power for False Positive", 6, calculator.power(2, 2), DELTA);
+        assertNotEquals("Finding power for False Positive", -7.3, calculator.power(2, 3), DELTA);
+    }
+
+    @Test
+    public void logTruePositive(){
+        assertEquals("Finding natural log for True Positive", 0, calculator.naturalLog(1), DELTA);
+        assertEquals("Finding natural log for True Positive", 0, calculator.naturalLog(1), DELTA);
+    }
+
+    @Test
+    public void logFalsePositive(){
+        assertNotEquals("Finding natural log for False Positive", 6, calculator.naturalLog(2.4), DELTA);
+        assertNotEquals("Finding natural log for False Positive", 7.3, calculator.naturalLog(2.1), DELTA);
+    }
 }
