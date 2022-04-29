@@ -1,0 +1,48 @@
+pipeline{
+    agent any
+    environment{
+        dockerImage="v1"
+        registry="rk007again/calculator_devops"
+        registryCredential="docker-login"
+    }
+    stages {
+        stage('Getting github repo') {
+            steps {
+                git url: 'https://github.com/kalerushikesh32/calculator_devops.git', branch: 'master',
+                 credentialsId: 'github_token'
+            }
+        }
+        stage('Test'){
+            steps {
+                bat 'mvn clean test'
+            }
+        }
+        stage('Build'){
+            steps {
+                bat 'mvn install'
+            }
+        }
+        stage('Build docker image') {
+            steps{
+                
+                script {
+                    dockerImage = docker.build registry + ":$dockerImage"
+                }
+            }
+        }
+        stage('Push image') {
+            steps{
+                script {
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()  
+                    }
+                }
+            }
+        }
+        stage('Cleaning image') {
+            steps{
+                bat "docker rmi $registry:v1"
+            }
+        }
+    }
+}
